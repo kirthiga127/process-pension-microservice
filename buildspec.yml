@@ -27,4 +27,4 @@ phases:
     - printf '[{"name":"auth-container","imageUri":"%s"}]' 156962844638.dkr.ecr.us-east-1.amazonaws.com/pms-process-pension-repository-890387:final > imagedefinitions.json
 artifacts:
   files:
-  - processpension-microservice/imagedefinitions.json
+  - process-pension-microservice/imagedefinitions.json
