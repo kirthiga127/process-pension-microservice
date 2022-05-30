@@ -10,7 +10,8 @@ import com.pms.pension.process.exception.AuthorizationException;
 import com.pms.pension.process.model.ProcessPensionInput;
 import com.pms.pension.process.model.ProcessPensionResponse;
 
-@FeignClient(name = "pensiondisbursement-microservice",url = "http://localhost:8300/disbursement/api/final")
+//@FeignClient(name = "pensiondisbursement-microservice",url = "http://localhost:8300/disbursement/api/final")
+@FeignClient(name = "pensiondisbursement-microservice",url = "http://890387-pension-disbursement-lb-1937574338.us-east-1.elb.amazonaws.com/disbursement/api/final")
 public interface PensionDisbursementFeignClient {
 	
 	@PostMapping("/disbursePension")
